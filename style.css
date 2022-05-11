@@ -21,18 +21,23 @@ nav{
   padding: 1rem;
 }
 ul{
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0 2rem 0 2rem;
 }
+nav > ul > li{
+  flex-grow: 1;
+  text-align: center;
+}
 #logo{
-  font-size: 4rem;
   font-family: 'Roboto', sans-serif;
+  font-size: 3.5rem;
 }
 #logo>span{
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #4a6ed3;
 }
 #logo:hover{
@@ -52,6 +57,7 @@ main{
   justify-content: center;
 }
 menu{
+  flex-wrap: wrap;
   padding: 2rem;
   display: flex;
   flex-direction: row;
@@ -63,7 +69,7 @@ menu > li{
 }
 menu > li > a{
   
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   border: 3px solid #6db914;
   max-width: 60%;
