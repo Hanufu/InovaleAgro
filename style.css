@@ -44,7 +44,7 @@ nav > ul > li{
   opacity: 0.8;
 }
 .nav-item{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-decoration: dashed;
 }
@@ -53,8 +53,7 @@ nav > ul > li{
   text-decoration: underline;
 }
 main{
-  display: flex;
-  justify-content: center;
+ text-align: center;
 }
 menu{
   flex-wrap: wrap;

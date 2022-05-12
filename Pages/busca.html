@@ -6,6 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <title>Inovale Agro - Avaliação</title>
+    <style>
+        #title{
+            font-size: 2.5rem;
+            margin: 1rem;
+            color: #6E8BDC;
+        }
+        label{
+            font-size: 1.5rem;
+        }
+        input-valores{
+            font-weight: bold;
+        }
+        .button{
+            font-size: 20px;
+            background-color: #6db914;
+            color: #FFFF;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.3em;
+            margin: 1rem;
+        }
+        #input-valores{
+            width: 30%;
+            height: 30px;
+            border-radius: 2rem;
+            border-style: none;
+            border: 3px solid #6db914;
+            padding: 0.8rem;
+            margin: 0rem 2rem 0rem 2rem;
+        }
+
+        #valores{
+            margin: 1rem;
+            background-color: #6E8BDC;
+            color: #FFFF;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+        }
+        #campoValores{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,16 +63,21 @@
     </nav>
 
     <main>
+        <h1 id="title">Algoritmo de Busca</h1>
+        <label for="input-valores">Crie um vetor:</label>
+        <input id="input-valores" name="valores" type="text" placeholder=" 1, 5, 8, 3, 7...">
+        <input id="buttonCriar" class="button" type="button" value="Criar" onclick="criarVetor()" />
+        <input id="buttonBuscar" class="button" type="button" value="Ordenar" onclick="buscar()" />
+        <div id="campoValores">
 
-        <h1>Algoritmo de Busca</h1>
-
+        </div>
     </main>
 
     <footer>
         <p class="text-center text-muted">Feito com ❤️ by Eduardo Ribeiro</p>
-        <p>Meu <a href="https://eduardoribeiro.me" target="_blank">Portfólio</a></p>
+        <p>~ Meu <a href="https://eduardoribeiro.me" target="_blank">Portfólio ~</a></p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>

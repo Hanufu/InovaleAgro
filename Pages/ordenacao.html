@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="ordenacao.css">
     <title>Inovale Agro - Avaliação</title>
 </head>
 <body>
@@ -17,16 +18,21 @@
     </nav>
 
     <main>
-        
-        <h1>Algoritmo de Ordenação</h1>
-     
+        <h1 id="title">Algoritmo de Ordenação</h1>
+        <label for="input-valores">Crie um vetor:</label>
+        <input id="input-valores" name="valores" type="text" placeholder="exemplo: 1, 5, 8, 3, 7...">
+        <input id="buttonCriar" class="button" type="button" value="Criar" onclick="criarVetor()" />
+        <input id="buttonOrdenar" class="button" type="button" value="Ordenar" onclick="ordenarVetor()" />
+        <div id="campoValores">
+
+        </div>
     </main>
 
     <footer>
         <p class="text-center text-muted">Feito com ❤️ by Eduardo Ribeiro</p>
-        <p>Meu <a href="https://eduardoribeiro.me" target="_blank">Portfólio</a></p>
+        <p>~ Meu <a href="https://eduardoribeiro.me" target="_blank">Portfólio ~</a></p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>
