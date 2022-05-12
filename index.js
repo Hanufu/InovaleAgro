@@ -69,6 +69,57 @@ function SelectionSort(values) {
     }
     return values
 }
+//gerar array com valores aleatórios
+function gerarValores(){
+    let index = Math.floor(Math.random() * 20);
+    let valores = [];
+    for(i = 0; i < index; i++){
+        valores[i] = Math.floor(Math.random() * 20);
+   }
+   criarVetor(valores)
+}
 
+//busca binaria
+function buscaBinaria(){
+    let div = document.createElement('div');
+    let valores = document.getElementById('valores').innerText;
+    let valoresInteiros = valores.split(',').map((item) =>{
+        return parseInt(item, 10);
+    });
+    let input = document.getElementById('input-valores').value;
+    let item = parseInt(input, 10);
 
-    
+        let prim = 0;
+        let ult = valoresInteiros.length - 1;
+        let achou = false;
+
+        while (prim <= ult && !achou) {
+            meioLista = Math.ceil((prim + ult) / 2);
+            if (valoresInteiros[meioLista] == item) {
+                
+                div.innerText = ("O valor está no index: " + meioLista);
+                let campoValores = document.querySelector('#campoValores');
+                campoValores.appendChild(div);
+                div.setAttribute('id', 'valores');
+                div.style.backgroundColor = "#19b914";
+                achou = true;
+            }
+            else {
+                if (item < valoresInteiros[meioLista]) {
+                    ult = meioLista - 1;
+                }
+                else {
+                    prim = meioLista + 1;
+                }
+            }
+        }
+        if(achou == false){
+            div.innerText = "O valor não está contido na lista!"
+            let campoValores = document.querySelector('#campoValores');
+            campoValores.appendChild(div);
+            div.setAttribute('id', 'valores');
+            div.style.backgroundColor = "#ff4b4b";
+        }
+        return achou;
+    }
+
