@@ -88,7 +88,6 @@ function buscaBinaria(){
     });
     let input = document.getElementById('input-valores').value;
     let item = parseInt(input, 10);
-
         let prim = 0;
         let ult = valoresInteiros.length - 1;
         let achou = false;
@@ -97,6 +96,7 @@ function buscaBinaria(){
             meioLista = Math.ceil((prim + ult) / 2);
             if (valoresInteiros[meioLista] == item) {
                 
+                //mostra valor encontrado na tela
                 div.innerText = ("O valor está no index: " + meioLista);
                 let campoValores = document.querySelector('#campoValores');
                 campoValores.appendChild(div);
@@ -114,6 +114,8 @@ function buscaBinaria(){
             }
         }
         if(achou == false){
+
+            //mostra valor não encontrado na tela
             div.innerText = "O valor não está contido na lista!"
             let campoValores = document.querySelector('#campoValores');
             campoValores.appendChild(div);
