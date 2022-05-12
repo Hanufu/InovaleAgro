@@ -65,7 +65,6 @@ function SelectionSort(values) {
         values[min_idx] = values[i];
         values[i] = aux;
         
-        //console.log(vetor); motra o passo a passo
     }
     return values
 }
