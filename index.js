@@ -97,7 +97,7 @@ function buscaBinaria(){
             if (valoresInteiros[meioLista] == item) {
                 
                 //mostra valor encontrado na tela
-                div.innerText = ("O valor está no index: " + meioLista);
+                div.innerText = ("O valor está no índex: " + meioLista);
                 let campoValores = document.querySelector('#campoValores');
                 campoValores.appendChild(div);
                 div.setAttribute('id', 'valores');
