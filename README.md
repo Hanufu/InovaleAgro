@@ -1,5 +1,5 @@
 # Processo seletivo da InovaleAgro
-## Página Web contendo aloritmos de ordenação e busca.
+## Página Web contendo algoritmos de ordenação e busca.
 
 Foi pedido para implementar uma página web que contenha os algoritmos de ordenação e de busca, foi utilizado para ordenação o algoritmo de bolha já para a busca foi implementado o algoritmo de selecao, busca binária.
 
